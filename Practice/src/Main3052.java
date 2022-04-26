@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-class Main {
+class Main3052 {
 	
 	public static void main(String[] args) throws IOException {
 		
@@ -20,6 +20,7 @@ class Main {
 		
 		Set<Integer> set = new HashSet<>(arr);
 		System.out.println(set.size());
+		System.out.println();
 		
 		
 		

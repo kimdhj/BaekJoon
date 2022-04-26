@@ -4,43 +4,39 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class Main4344 {
-
-	public static void main(String[] args) throws IOException {
+class Main4344 {
+	public static void main(String args[]) throws IOException {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int n = Integer.parseInt(br.readLine());
+		int testCaseLine = Integer.parseInt(br.readLine());
 		
 		ArrayList<Integer> arr = new ArrayList<>();
-		
-		for(int i = 0; i < n; i++) {
-			int sum = 0;
+		for(int i = 0; i < testCaseLine; i ++) {
 			int cnt = 0;
-			double rate = 0;
+			int sum = 0;
 			double average = 0;
+			double rate = 0;
 			
 			StringTokenizer st = new StringTokenizer(br.readLine());
-			int a = Integer.parseInt(st.nextToken());
-
-			for(int j = 0; j < a; j++) {
-				int b = Integer.parseInt(st.nextToken());
-				arr.add(b);
-				sum += b;
-				
-			}//inner for
-			average = (double)sum / a;
-
-			for(int j = 0; j < a; j++) {
-				if(arr.get(j) > average) {
-					cnt++; //lower score student num check
-				}
-			}//inner for 
-			rate = ((double)cnt / a) * 100;
-			System.out.printf("%.3f%%\n", rate);
+			int stu = Integer.parseInt(st.nextToken());
 			
-			arr.clear();
+			for(int j = 0; j < stu; j++) {
+				int score = Integer.parseInt(st.nextToken());
+				sum += score;
+				arr.add(score);
+			}//inner for			
+			average = (double)sum / stu;
+					
+			for(int j = 0; j < stu; j++) {
+				if(arr.get(j) > average) {
+					cnt++;
+				}
+			}//inner for		
+			rate = ((double)cnt / stu) * 100;
+			System.out.printf("%.3f%%\n", rate);
 		}//outer for
+		br.close();
+		arr.clear();
 		
 	}
-	
 }

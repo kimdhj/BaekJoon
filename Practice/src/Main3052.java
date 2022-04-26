@@ -20,10 +20,7 @@ class Main3052 {
 		
 		Set<Integer> set = new HashSet<>(arr);
 		System.out.println(set.size());
-		System.out.println();
-		
-		
-		
+				
 	}
 	
 }

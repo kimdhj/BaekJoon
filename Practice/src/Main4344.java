@@ -40,9 +40,6 @@ class Main4344 {
 			System.out.printf("%.3f%%\n", rate);
 			arr.clear();
 		}//outer for
-		
-		br.close();
-		
-		
+		br.close();	
 	}
 }

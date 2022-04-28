@@ -26,19 +26,17 @@ class Main4344 {
 				arr.add(score);
 			}//inner for			
 			average = (double)sum / stu;
-			System.out.println("평균 = " + average);	
-			
+		
 			for(int j = 0; j < stu; j++) {
 				if(arr.get(j) > average) {
 					cnt++;
 				}
 			}//inner for
 			
-			System.out.println("평균보다 높은 학생 수 = " + cnt);
-			
+	
 			rate = ((double)cnt / stu) * 100;
 			System.out.printf("%.3f%%\n", rate);
-			arr.clear();
+			arr.clear(); //ArrayList 초기화
 		}//outer for
 		br.close();	
 	}

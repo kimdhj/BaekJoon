@@ -1,18 +1,18 @@
 class Main4673 {
 	public static void main(String[] args) {
 		
-		boolean[] checkNum = new boolean[10001];
+		boolean[] numCheck = new boolean[10001];
 		
-		for(int i = 0; i < checkNum.length; i++) {
+		for(int i = 1; i < numCheck.length; i++) {
 			int otherNum = d(i);
 			if(otherNum < 10001) {
-				checkNum[otherNum] = true;
+				numCheck[otherNum] = true;
 			}
 		}
-		
 		StringBuilder sb = new StringBuilder();
-		for(int i = 0; i < checkNum.length; i++) {
-			if(checkNum[i] == false) {
+		
+		for(int i = 1; i < numCheck.length; i++) {
+			if(numCheck[i] == false) {
 				sb.append(i).append("\n");
 			}
 		}
@@ -22,11 +22,11 @@ class Main4673 {
 	static int d(int i) {
 		int otherNum = i;
 		
-		while(true) {
+		while(i != 0) {
 			otherNum += (i % 10);
-			i = i / 10;
-			if(i == 0) break;
+			i = (i / 10);
 		}
 		return otherNum;
 	}
+	
 }

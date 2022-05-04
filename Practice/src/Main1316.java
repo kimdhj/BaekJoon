@@ -25,10 +25,7 @@ public class Main1316 {
 		}
 		System.out.println(groupCnt);
 		
-		
 				
-		
-		
 		
 	}//main
 	

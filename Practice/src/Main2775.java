@@ -21,9 +21,9 @@ public class Main2775 {
 			int n = Integer.parseInt(br.readLine());
 			
 			for(int a = 1; a <= k; a++) {
-				peopleNum[k][0] = 1;
+				peopleNum[a][0] = 1;
 				for(int b = 1; b < n; b++) {
-					peopleNum[k][b] = peopleNum[k][b-1] + peopleNum[k-1][b];
+					peopleNum[a][b] = peopleNum[a][b-1] + peopleNum[a-1][b];
 				}
 			}
 			sb.append(peopleNum[k][n-1]).append("\n");

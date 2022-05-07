@@ -28,25 +28,21 @@ public class Main10757_1 {
 //		System.out.println(strB.length);
 		
 		StringBuilder sb = new StringBuilder();
-		sb.append(A);		
+		sb.append(A); //입력 A에대한 코드
 		sb.reverse();
-		
 		subtractLength = arrLength - sb.length();
 		for(int i = 0; i < subtractLength; i++) {
 			sb.append(0);
-		}
-			
+		}	
 		strA = String.valueOf(sb).split("");
 		sb.delete(0, sb.length());
 		
-		sb.append(B);
+		sb.append(B); //입력 B에대한 코드
 		sb.reverse();
-		
 		subtractLength = arrLength - sb.length();
 		for(int i = 0; i < subtractLength; i++) {
 			sb.append(0);
 		}
-		
 		strB = String.valueOf(sb).split("");
 		sb.delete(0, sb.length());
 		

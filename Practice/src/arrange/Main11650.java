@@ -32,7 +32,7 @@ public class Main11650 {
 			}
 		});
 		
-//		Arrays.sort(coordinateArr, (o1, o2) -> {
+//		Arrays.sort(coordinateArr, (o1, o2) -> { //¶÷´Ù½Ä
 //			if(o1[0] == o2[0]) {
 //				return o1[1] - o2[1];
 //			}				

@@ -14,7 +14,7 @@ public class Main2108 {
 		int center = 0;
 		int freqNum = 0;
 		int range = 0;
-		int numArr[] = new int[8001];
+		int[] numArr = new int[8001];
 		
 		for(int i = 0; i < N; i++) {
 			int num = Integer.parseInt(br.readLine());

@@ -12,7 +12,7 @@ public class Main25305 {
 		int N = Integer.parseInt(st.nextToken());
 		int k = Integer.parseInt(st.nextToken());
 		
-		int gradeArr[] = new int[10001];
+		int[] gradeArr = new int[10001];
 		
 		st = new StringTokenizer(br.readLine(), " ");
 		for(int i = 0; i < N; i++) {

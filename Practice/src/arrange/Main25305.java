@@ -20,13 +20,14 @@ public class Main25305 {
 		}
 		
 		int cnt = 0;
+		outerFor : 
 		for(int i = 10000; i >= 0; i--) { //높은 점수부터 거꾸로 찾아야함
 			if(cnt < k) {
 				for(int j = 0; j < gradeArr[i]; j++) { //중복점수인 학생이 있을 경우
 					cnt++;
 					if(cnt == k) { //cnt가 k명인경우의 점수(index)를 찍고 반복문을 나온다.
 						System.out.println(i);
-						break;
+						break outerFor;
 					}
 				}
 			}
